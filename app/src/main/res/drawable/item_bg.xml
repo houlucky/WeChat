@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 内部颜色 -->
+            <solid android:color="@color/item_inside_bg_color_normal" />
+            <!-- 边缘线条颜色 -->
+            <stroke
+                android:width="1.0px"
+                android:color="@color/item_stroke_color" />
+            <!-- 圆角的幅度 -->
+            <corners
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="0dip"
+                android:topLeftRadius="0dip"
+                android:topRightRadius="0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 内部颜色 -->
+            <solid android:color="@color/item_inside_bg_color_pressed" />
+            <!-- 边缘线条颜色 -->
+            <stroke
+                android:width="1px"
+                android:color="@color/item_stroke_color" />
+            <!-- 圆角的幅度 -->
+            <corners
+                android:bottomLeftRadius="0dip"
+                android:bottomRightRadius="0dip"
+                android:topLeftRadius="0dip"
+                android:topRightRadius="0dip" />
+        </shape>
+    </item>
+</selector>

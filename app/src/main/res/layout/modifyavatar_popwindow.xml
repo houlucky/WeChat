@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_18"
+    android:paddingRight="@dimen/margin_18">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/pop_bg"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popwindow_height"
+            android:gravity="center"
+            android:background="@drawable/pop_bg_selector"
+            android:clickable="true"
+            android:text="照相机"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@color/item_stroke_color"/>
+
+        <TextView
+            android:id="@+id/tv_PhotoGallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popwindow_height"
+            android:gravity="center"
+            android:background="@drawable/pop_bg_selector"
+            android:clickable="true"
+            android:text="本地图片库"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

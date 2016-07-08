@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:background="@color/theme_bg_color">
+
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edit_msg"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/color_1e1e1e"
+            android:text=""
+            android:maxLines="6"
+            android:textColorHint="@color/color_b4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/input_bg"
+            android:minHeight="@dimen/height_40"
+            android:paddingLeft="@dimen/margin_5"/>
+
+        <Button
+            android:id="@+id/btn_chat_send"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_10"
+
+            android:paddingLeft="@dimen/margin_5"
+            android:background="@drawable/btn_chat_send_selector"
+            android:layout_gravity="bottom"
+            android:text="发送"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_small"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_record"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_record_seletor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_caht_ptv"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_ptv_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_pic"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_pic_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_camera"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_camera_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_hongbao"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_hongbao_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_emo"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_emo_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_chat_plus"
+                android:layout_width="@dimen/chat_btn_width"
+                android:layout_height="@dimen/chat_btn_height"
+                android:background="@drawable/btn_chat_plus_selector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_emo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_bottom_bar_tool_bar_height"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_emo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_add"
+            android:visibility="gone"
+            layout="@layout/include_chat_add" />
+
+    </LinearLayout>
+
+</LinearLayout>
